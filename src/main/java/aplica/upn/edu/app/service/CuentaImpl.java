@@ -14,7 +14,7 @@ public class CuentaImpl implements CuentaDao {
 	
 	
 	@Override
-	public ModelAndView verificarAcceso(String email, String password) {
+	public List verificarAcceso(String email, String password) {
 		
 		List datos;
 		ModelAndView mav = new ModelAndView();
@@ -26,12 +26,16 @@ public class CuentaImpl implements CuentaDao {
 		
 		if(datos.isEmpty()) {
 			// datos erroneos!
-			mav = null;
+			//mav = null;
+			
+			datos=null;
 		}else {
 			//datos correctos!
-			mav.addObject("lista", datos);
-		}	
-		return mav;
+			//mav.addObject("lista", datos);
+			
+			
+		}
+		return datos;
 	}
 	
 	

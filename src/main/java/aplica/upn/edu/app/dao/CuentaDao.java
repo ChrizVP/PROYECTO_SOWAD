@@ -1,10 +1,12 @@
 package aplica.upn.edu.app.dao;
 
 
+import java.util.List;
+
 import org.springframework.web.servlet.ModelAndView;
 
 public interface CuentaDao {
 
-	public  ModelAndView verificarAcceso(String email, String password);
+	public  List verificarAcceso(String email, String password);
 	
 }

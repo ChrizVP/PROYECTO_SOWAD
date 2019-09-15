@@ -34,10 +34,10 @@ public class ClienteController {
 	@RequestMapping(value="/", method = RequestMethod.GET)
 	public ModelAndView goHome() {
 		
-		return inicio();
+		return mav;
 	}
 	*/
-	@RequestMapping(value="index"/*,method=RequestMethod.GET*/)
+	@RequestMapping(value="index",method=RequestMethod.GET)
 	public ModelAndView inicio( ModelAndView modelAndView) {
 		
 		
