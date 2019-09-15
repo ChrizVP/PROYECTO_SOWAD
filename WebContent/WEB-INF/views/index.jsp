@@ -84,8 +84,8 @@
                         <a data-toggle="dropdown" href="#" class="dropdown-toggle">
                             <img class="nav-user-photo" src="${urlPublic}/Boostrap/images/avatars/user.jpg" alt="xxxx" />
                             <span class="user-info">
-                                <small>Bienvenido,</small>
-                                ccc
+                                <small>Bienvenido ${lista[0].nombre}</small>
+                               
                             </span>
 
                             <i class="ace-icon fa fa-caret-down"></i>
@@ -109,7 +109,7 @@
                             <li class="divider"></li>
 
                             <li>
-                                <a href="#">
+                                <a href="CuentaController?accion=salir">
                                     <i class="ace-icon fa fa-power-off"></i>
                                     Logout
                                 </a>

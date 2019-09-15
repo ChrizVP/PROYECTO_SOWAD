@@ -30,20 +30,21 @@ public class ClienteController {
 	JdbcTemplate jdbcTemplate = new JdbcTemplate(conexion.Conexion());
 	ModelAndView mav=new ModelAndView();
 	
-	
+	/*
 	@RequestMapping(value="/", method = RequestMethod.GET)
 	public ModelAndView goHome() {
 		
 		return inicio();
 	}
-	
-	@RequestMapping(value="index",method=RequestMethod.GET)
-	public ModelAndView inicio() {
+	*/
+	@RequestMapping(value="index"/*,method=RequestMethod.GET*/)
+	public ModelAndView inicio( ModelAndView modelAndView) {
 		
 		
-		mav.setViewName("index");
-		return mav;
+		modelAndView.setViewName("index");
+		return modelAndView;
 	}
+	
 	
 	@RequestMapping(value="listarCliente",method=RequestMethod.GET)
 	public ModelAndView Listar() {
