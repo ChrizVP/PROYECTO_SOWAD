@@ -68,8 +68,8 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <div class="navbar-header pull-left">
-                <a href="@Url.Action("Inicio", "Principal")" class="navbar-brand">
+            <div class="navbar-header ">
+                <a href="index" class="navbar-brand">
                     <small>
                         <i class="fa fa-leaf"></i>
                         Sistema de  Ventas
